@@ -1,13 +1,16 @@
 FROM ubuntu:trusty
 
-# https://github.com/ampervue/docker-ffmpeg
-# https://hub.docker.com/r/dkarchmervue/ffmpeg/
+# https://github.com/ampervue/docker-python34
+# https://hub.docker.com/r/ampervue/python34
 
 MAINTAINER David Karchmer <dkarchmer@ampervue.com>
 
 #####################################################################
 #
-# A Docker image with everything needed to run Python/FFMPEG scripts
+# A base building block with Python 3.4 used by:
+#
+#    - https://hub.docker.com/r/dkarchmervue/python34-ffmpeg
+#    - https://hub.docker.com/r/dkarchmervue/python34-opencv
 # 
 # Image based on Ubuntu:14.04
 #

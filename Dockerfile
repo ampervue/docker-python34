@@ -118,7 +118,7 @@ RUN pip3 install --no-cache-dir --upgrade --ignore-installed pip==$PYTHON_PIP_VE
 
 WORKDIR /usr/local/src
 
-RUN curl -Os http://www.tortall.net/projects/yasm/releases/yasm-${YASM_VERSION}.tar.gz \
+RUN curl -Os https://www.tortall.net/projects/yasm/releases/yasm-${YASM_VERSION}.tar.gz \
     && tar xzvf yasm-${YASM_VERSION}.tar.gz
                   
 

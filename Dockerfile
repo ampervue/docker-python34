@@ -66,6 +66,7 @@ RUN echo deb http://archive.ubuntu.com/ubuntu trusty universe multiverse >> /etc
     libmp3lame-dev \
     libpq-dev \
     libpng-dev \
+    libsqlite3-dev \
     libssl-dev \
     libtheora-dev \
     libtiff4-dev \
@@ -95,6 +96,7 @@ RUN set -x \
 	&& rm python.tar.xz* \
 	&& cd /usr/src/python \
 	&& ./configure --enable-shared \
+                       --enable-loadable-sqlite-extensions \
 	&& make -j$(nproc) \
 	&& make install \
 	&& ldconfig \
